@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Weather Dashboard</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+        <div class="row">
+          <h2>Type in a City!</h2>
+          <input type="text" id="citySearch">
+          <button class="btn btn-primary">Go!</button>
+          <button id="clearBtn">Clear Search History</button>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+        <div class="previousSearchList"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9">
+    <div class="row">
+      <div class="jumbotron" style="padding:32px;">
+        <h1 id="cityName"></h1>
+        <p id="date"></p>
+        <div id="weatherIcon"></div>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+        <p id="uvIndex"></p>
+      </div>
+    </div>
+    <div class="row">
+        <h3 class="card-title">5 Day Forcast!</h3>
+    </div>
+    <div class="row">
+      <div class="card mt-2" style="width:150px;height:200px;">
+        <div class="card-body" style="color:antiquewhite;background-color: red;">
+          <div class="forcastDate1"></div>
+          <div class="weatherIcon1"></div>
+          <div class="tempForcast1"></div>
+          <div class="humidityForcast1"></div>
+        </div>
+      </div>
+      <div class="card mt-2" style="width:150px;height:200px;">
+        <div class="card-body" style="color:antiquewhite;background-color: orange;">
+          <div class="forcastDate2"></div>
+          <div class="weatherIcon2"></div>
+          <div class="tempForcast2"></div>
+          <div class="humidityForcast2"></div>
+        </div>
+      </div>
+      <div class="card mt-2" style="width:150px;height:200px;">
+        <div class="card-body" style="color:antiquewhite;background-color: yellow;">
+          <div class="forcastDate3"></div>
+          <div class="weatherIcon3"></div>
+          <div class="tempForcast3"></div>
+          <div class="humidityForcast3"></div>
+        </div>
+      </div>
+      <div class="card mt-2" style="width:150px;height:200px;">
+        <div class="card-body" style="color:antiquewhite;background-color: green;">
+          <div class="forcastDate4"></div>
+          <div class="weatherIcon4"></div>
+          <div class="tempForcast4"></div>
+          <div class="humidityForcast4"></div>
+        </div>
+      </div>
+      <div class="card mt-2" style="width:150px;height:200px;">
+        <div class="card-body" style="color:antiquewhite;background-color: blue;">
+          <div class="forcastDate5"></div>
+          <div class="weatherIcon5"></div>
+          <div class="tempForcast5"></div>
+          <div class="humidityForcast5"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="assets/jquery.js"></script>
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
